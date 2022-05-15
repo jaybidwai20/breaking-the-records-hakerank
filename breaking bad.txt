@@ -1,0 +1,47 @@
+#include<bits/stdc++.h>
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    int n;
+    cin>>n;
+   
+   int a[n],b[n],c[n];
+   for(int i=0;i<n;i++)
+   {
+       cin>>a[i];
+   }
+   int counter1=0;
+   int counter2=0;
+   int max=0,min=0;
+   max=a[0];
+   min=a[0];
+   for(int i=1;i<n;i++)
+   {
+       if(a[i]>max)
+       {
+           counter1++;
+           max=a[i];
+           
+       }
+       if(a[i]<min)
+       {
+           counter2++;
+           min=a[i];
+       }
+     
+   }
+   cout<<counter1<<" "<<counter2<<endl;
+}
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
